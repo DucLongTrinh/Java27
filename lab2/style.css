@@ -1,0 +1,27 @@
+/* áp dụng cho tất cả nội dung */
+
+* {
+  text-decoration: overline yellow wavy 3px;
+}
+.heading {
+  font-size: 50px;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+/* ap dung cho nhieu selector khac nhau */
+.description,
+.external-link {
+  text-decoration: overline;
+  color: pink;
+}
+
+/*  ap dung cho .avaatr nam ben trong .container (la the con) */
+.container > .avatar {
+  width: 150px;
+}
+/* ap dung cho phan tu co ca hai class  */
+.heading.special-heading {
+  color: blue;
+}
