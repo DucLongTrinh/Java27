@@ -19,7 +19,7 @@
 
 /*  ap dung cho .avaatr nam ben trong .container (la the con) */
 .container > .avatar {
-  width: 150px;
+  width: 160px;
 }
 /* ap dung cho phan tu co ca hai class  */
 .heading.special-heading {
