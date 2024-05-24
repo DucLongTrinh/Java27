@@ -1,0 +1,65 @@
+/* áp dụng cho tất cả các nội dung */
+* {
+  text-decoration: overline green wavy 3px;
+}
+.heading {
+  font-size: 50px;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+/* ap dung cho nhieu selector khac nhau  */
+.description,
+.external-link {
+  text-decoration: overline;
+  color: pink;
+}
+/* áp dụng cho avatar nằm bên trong container (là thẻ con) */
+.container > .avatar {
+  width: 160px;
+}
+/* áp dụng cho phần tử có cả hai class */
+.heading.special-heading {
+  color: blue;
+}
+
+/* áp dụng Text */
+body {
+  color: blue;
+}
+h1 {
+  color: black;
+}
+/* áp dụng Links */
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+visited link a:visited {
+  color: green;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* áp dụng Lists */
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ol {
+  list-style-type: decimal-leading-zero;
+}
+/* áp dụng Border */
+div {
+  border-width: 10px;
+  border-style: solid;
+  border-color: greenyellow;
+}

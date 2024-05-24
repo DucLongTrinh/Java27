@@ -10,18 +10,18 @@
   text-align: center;
 }
 
-/* ap dung cho nhieu selector khac nhau */
+/* áp dụng cho nhiều selector khác nhau */
 .description,
 .external-link {
   text-decoration: overline;
   color: pink;
 }
 
-/*  ap dung cho .avaatr nam ben trong .container (la the con) */
+/*  áp dụng cho .avatar nằm bên trong .container (là thẻ con) */
 .container > .avatar {
   width: 160px;
 }
-/* ap dung cho phan tu co ca hai class  */
+/* áp dụng cho phần tử có cả hai class  */
 .heading.special-heading {
   color: blue;
 }
