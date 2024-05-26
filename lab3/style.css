@@ -38,7 +38,7 @@
 .article__excerpt {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.6;   /*tỷ lệ kích thước ở trên giao diện với font-size*/
+    line-height: 1.6;   /*tỷ lệ kích thước ở trên giao diện với font-size: sẽ đặt khoảng cách giữa các dòng văn bản là 1.6 lần font chữ. Điều này giúp cải thiện tính đọc và hiển thị của văn bản trên trang web.*/
     color: #666666;
     margin-bottom: 20px;
 }
