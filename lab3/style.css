@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+.article-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;  /* khoảng cách giữa các mục nội dung*/
+}
+
 .article {
   width: 320px;
   border-radius: 20px;
@@ -31,7 +38,6 @@
     line-height: 28px;
     color: #001122;
     letter-spacing: -0.5px;
-    
     margin-bottom: 20px;
 }
 

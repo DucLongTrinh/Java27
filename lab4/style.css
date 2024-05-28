@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.movie-card {
+  background-color: green;
+  padding: 30px;
+  width: 150px;
+}
+.movie-list {
+  height: 300px;
+  display: flex;
+}
