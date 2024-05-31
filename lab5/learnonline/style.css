@@ -11,7 +11,7 @@
 }
 
 .container {
-  width: 1020px;
+  width: 1320px;
   margin-left: auto;
   margin-right: auto;
   padding-inline: 10px;
@@ -26,7 +26,7 @@
 }
 
 .row > [class*="col-"] {
-  padding-top: 20px;
+  margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -37,6 +37,10 @@
 
 .col-2 {
   width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
 }
 
 .col-4 {
@@ -75,13 +79,13 @@
   width: 100%;
 }
 
-/* .product-card,
+.product-card,
 .post-card {
   background-color: green;
-} */
+}
 
 /* Utility classes */
-.d-flex {
+.display-flex {
   display: flex;
 }
 
@@ -110,7 +114,7 @@
 }
 
 .align-items-stretch {
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .align-items-start {

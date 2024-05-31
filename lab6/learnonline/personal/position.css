@@ -1,0 +1,110 @@
+/* Mac dinh thi moi noi dung deu co position la static
+
+/* cac gia tri position khac nhau dieu khac biet lon nhat la container mà nó căn theo*/
+
+/* .box--1 { */
+/* Căn theo khung trình duyet */
+/* Nó không còn hiển thị trong luồng thông thườngs */
+
+/* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.box--2 { */
+/* Nó vẫn hiển thị trong luồng thông thường*/
+/* Căn theo vị trí ban đầu */
+/* Dùng để tạo container cho các nội dung có position là absolute */
+/* position: relative;
+}
+
+.parent {
+  position: relative;
+  background-color: darkblue;
+  height: 400px;
+} */
+/* 
+.box--3 { */
+/* Nó không còn hiển thị trong luồng thông thường*/
+/* Căn theo phần tử cha gần nhất (phần tử chứa nó) 
+  có position là: fixed hoặc relative hoặc absoute */
+/* 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+
+}
+
+.box {
+  padding: 20px;
+}
+
+.box--1 {
+  background-color: rgba(0, 128, 0, 0.176);
+}
+
+.box--2 {
+  background-color: yellow;
+}
+
+.box--3 {
+  background-color: palegreen;
+}
+
+.box--4 {
+  background-color: red;
+}
+
+.box--5 {
+  background-color: pink;
+} */
+*/ .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-button {
+  display: inline-block;
+  background-color: green;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: pink;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin: 0;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-item {
+  padding: 6px 16px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* .button {
+  background-color: green;
+} */
+
+/* .button:hover {
+  background-color: yellow;
+} */
+
+/* .parent .child {
+} */
+
+/* ap dung child nam trong parent khi parent có hiệu ứng hover*/
+/* .parent:hover .child {
+} */
