@@ -1,6 +1,6 @@
-/* 
-- Container (vùng chứa - vùng hiển thị nội dung)
-- Row (hàng - chứa các cột/ô/cell)
+/*
+- Container (vùng chứa - vùng hiển thị nội dung
+- Row (hàng - chứa các cột/ô/Cell)
 - Cell/Column (ô chứa nội dung)
 */
 
@@ -79,6 +79,11 @@
   width: 100%;
 }
 
+.product-card,
+.post-card {
+  background-color: green;
+}
+
 /* Utility classes */
 .display-flex {
   display: flex;
@@ -126,5 +131,4 @@
 
 img {
   max-width: 100%;
-  object-fit: cover;
 }

@@ -30,7 +30,7 @@
 .box--3 { */
 /* Nó không còn hiển thị trong luồng thông thường*/
 /* Căn theo phần tử cha gần nhất (phần tử chứa nó) 
-  có position là: fixed hoặc relative hoặc absoute */
+  có position là: fixed hoặc relative hoặc absolute */
 /* 
   position: absolute;
   top: 0;
@@ -62,7 +62,8 @@
 .box--5 {
   background-color: pink;
 } */
-*/ .dropdown {
+
+.dropdown {
   display: inline-block;
   position: relative;
 }

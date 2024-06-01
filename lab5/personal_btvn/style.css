@@ -1,0 +1,67 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.feature-image {
+  width: 460px;
+  height: 383px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 80px;
+}
+
+.outstanding-feature.reversed .feature-image {
+  margin-right: 0;
+}
+
+.feature-info {
+  width: 380px;
+}
+
+.feature-title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #333333;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.feature-description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #888888;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.feature-explore {
+  gap: 15px;
+}
+
+.feature-link {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  border-radius: 8px;
+  height: 40px;
+  padding-inline: 15px;
+  text-decoration: none;
+}
+
+.feature-link.get-started {
+  color: #ffffff;
+  background: #222;
+  box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px rgba(0, 0, 0, 0.149),
+    0 1.8065619053231785px 1.8065619053231785px -1.25px rgba(0, 0, 0, 0.145),
+    0 3.6217592146567767px 3.6217592146567767px -1.875px rgba(0, 0, 0, 0.137),
+    0 6.8655999097303715px 6.8655999097303715px -2.5px rgba(0, 0, 0, 0.125),
+    0 13.646761411524492px 13.646761411524492px -3.125px rgba(0, 0, 0, 0.106),
+    0 30px 30px -3.75px rgba(0, 0, 0, 0.051);
+}
+
+.feature-link.learn-more {
+  background-color: #ebebeb;
+  color: #333333;
+}
