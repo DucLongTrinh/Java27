@@ -79,11 +79,6 @@
   width: 100%;
 }
 
-.product-card,
-.post-card {
-  background-color: green;
-}
-
 /* Utility classes */
 .display-flex {
   display: flex;
@@ -131,4 +126,5 @@
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }

@@ -2,6 +2,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.outstanding-feature {
+  margin-bottom: 100px;
+}
+
 .feature-image {
   width: 460px;
   height: 383px;
@@ -10,7 +14,8 @@ body {
   margin-right: 80px;
 }
 
-.outstanding-feature.reversed .feature-image {
+.outstanding-feature.reversed .feature-image,
+.more-feature .feature-image {
   margin-right: 0;
 }
 
@@ -64,4 +69,40 @@ body {
 .feature-link.learn-more {
   background-color: #ebebeb;
   color: #333333;
+}
+
+.feature-grid {
+  row-gap: 60px;
+}
+
+.feature--small {
+  width: 293px;
+}
+
+.feature--large {
+  width: 647px;
+}
+
+.more-feature .feature-image {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 300px;
+}
+
+.more-feature .feature-image img {
+  width: 100%;
+}
+
+.more-feature .feature-title {
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.more-feature .feature-description {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
