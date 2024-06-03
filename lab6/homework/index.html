@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice flexbox framer.app</title>
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="site-header">
+        <div class="container">
+          <!-- <div class="navbar-header"></div> -->
+
+          <div class="dropdown-lists topnav">
+            <!-- <div class="dropdown">
+              <div class="dropdown-button">TRANG CHỦ</div>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">Item 1</li>
+                <li class="dropdown-item">Item 2</li>
+                <li class="dropdown-item">Item 3</li>
+              </ul>
+            </div> -->
+
+            <ul class="dropdown">
+              <li>
+                <a
+                  class="dropdown-button-homepage"
+                  href="https://phimvsub.cc/"
+                  aria-current="page"
+                  >TRANG CHỦ</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-button-singlemovie"
+                  href="https://phimvsub.cc/danh-muc/phim-le/"
+                  >PHIM LẺ</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-button-seriesmovie"
+                  href="https://phimvsub.cc/danh-muc/phim-bo/"
+                  >PHIM BỘ</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-button-countries"
+                  href="https://phimvsub.cc/#"
+                  >QUỐC GIA</a
+                >
+                <ul class="dropdown-menu-countries">
+                  <li class="dropdown-item">Âu Mỹ</li>
+                  <li class="dropdown-item">Ấn Độ</li>
+                  <li class="dropdown-item">Đài Loan</li>
+                  <li class="dropdown-item">Hàn Quốc</li>
+                  <li class="dropdown-item">Hồng Kông</li>
+                  <li class="dropdown-item">Nhật Bản</li>
+                  <li class="dropdown-item">Philippines</li>
+                  <li class="dropdown-item">Thái Lan</li>
+                  <li class="dropdown-item">Trung Quốc</li>
+                  <li class="dropdown-item">Úc</li>
+                  <li class="dropdown-item">Quốc Gia Khác</li>
+                </ul>
+              </li>
+
+              <li>
+                <a class="dropdown-button-category" href="https://phimvsub.cc/#"
+                  >THỂ LOẠI</a
+                >
+                <ul class="dropdown-menu-category">
+                  <li class="dropdown-item">Âm Nhạc</li>
+                  <li class="dropdown-item">Bí ẩn</li>
+                  <li class="dropdown-item">Chiến Tranh</li>
+                  <li class="dropdown-item">Chính kịch</li>
+                  <li class="dropdown-item">Cổ Trang</li>
+                  <li class="dropdown-item">Gia Đình</li>
+                  <li class="dropdown-item">Hài Hước</li>
+                  <li class="dropdown-item">Hành động</li>
+                  <li class="dropdown-item">Hình Sự</li>
+                  <li class="dropdown-item">Học Đường</li>
+                  <li class="dropdown-item">Khoa Học</li>
+                  <li class="dropdown-item">Kinh Dị</li>
+                  <li class="dropdown-item">Kinh Điển</li>
+                  <li class="dropdown-item">Phiêu Lưu</li>
+                  <li class="dropdown-item">Phim 18+</li>
+                  <li class="dropdown-item">Tài Liệu</li>
+                  <li class="dropdown-item">Tâm Lý</li>
+                  <li class="dropdown-item">Thần Thoại</li>
+                  <li class="dropdown-item">Thể Thao</li>
+                  <li class="dropdown-item">Tình Cảm</li>
+                  <li class="dropdown-item">Viễn Tưởng</li>
+                  <li class="dropdown-item">Võ Thuật</li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-button-cartoon"
+                  href="https://phimvsub.cc/danh-muc/anime-vietsub-online/"
+                  >HOẠT HÌNH</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="msearch.navbar-right">
+            <form class="form-search" action="https://phimvsub.cc" method="get">
+              <div class="form-search__input">
+                <input
+                  type="text"
+                  name="s"
+                  placeholder="Bạn cần tìm phim ???"
+                  value=""
+                  class="ui-autocomplete-input"
+                  autocomplete="off"
+                />
+                <div class="form-search__autocomplete">
+                  <ul
+                    id="ui-id-1"
+                    tabindex="0"
+                    class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+                    unselectable="on"
+                    style="display: none"
+                  ></ul>
+                </div>
+              </div>
+              <button type="submit">
+                <svg viewBox="0 0 25 25">
+                  <use
+                    xlink:href="https://phimvsub.cc/wp-content/themes/pchill/img/icons.svg#search"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="more-feature">
+        <div class="container">
+          <div
+            class="feature-grid display-flex flex-wrap justify-content-between"
+          >
+            <div
+              class="feature-wrapper feature--small display-flex flex-direction-column"
+            >
+              <div class="movie-list display-flex justify-content-between">
+                <h2 class="movie-title">Phim HOT</h2>
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/khi-em-chay-ve-moi-thoi-khong-thumb.jpg"
+                      alt="Present Is Present"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Present Is Present</span>
+                    <h3 class="feature-description">
+                      Khi Em Chạy Về Mọi Thời Không
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/du-toi-khong-phai-nguoi-hung-thumb.jpg"
+                      alt="The Atypical Family"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">The Atypical Family</span>
+                    <h3 class="feature-description">
+                      Dù Tôi Không Phải Người Hùng
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/dem-lang-man-o-hagwon-thumb.jpg"
+                      alt="The Midnight Romance in Hagwon"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title"
+                      >The Midnight Romance in Hagwon</span
+                    >
+                    <h3 class="feature-description">Đêm Lãng Mạn Ở Hagwon</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/moi-lien-ket-bi-an-thumb.jpg"
+                      alt="Connection"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Connection</span>
+                    <h3 class="feature-description">Mối Liên Kết Bí Ẩn</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/khanh-du-nien-phan-2-thumb.jpg"
+                      alt="Joy of Life (Season 2)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Joy of Life (Season 2)</span>
+                    <h3 class="feature-description">Khánh Dư Niên</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/nam-ngoc-khanh-tam-thumb.jpg"
+                      alt="Practice Daughter"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title">Practice Daughter</span>
+                    <h3 class="feature-description">Nam Ngọc Khanh Tâm</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more1-feature">
+        <div class="container">
+          <div
+            class="feature-grid display-flex flex-wrap justify-content-between"
+          >
+            <div
+              class="feature-wrapper feature--small display-flex flex-direction-column"
+            >
+              <div class="movie-list display-flex justify-content-between">
+                <h2 class="movie-title">Phim Lẻ Mới</h2>
+                <div class="row">
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/nguoi-dan-ong-bi-truy-na-thumb.jpg"
+                          alt="Wanted Man"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span class="feature-title">Wanted Man</span>
+                        <h3 class="feature-description">
+                          Người đàn ông bị truy nã
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/mua-he-chieu-thang-dung-thumb.jpg"
+                          alt="The Vertical Ray of the Sun"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span class="feature-title"
+                          >The Vertical Ray of the Sun</span
+                        >
+                        <h3 class="feature-description">
+                          Mùa hè chiều thẳng đứng
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/the-getaway-thumb.jpg"
+                          alt="The Getaway"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span class="feature-title">The Getaway</span>
+                        <h3 class="feature-description">The Getaway</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/diem-bung-no-thumb.jpg"
+                          alt="Bursting Point"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span class="feature-title">Bursting Point</span>
+                        <h3 class="feature-description">Điểm Bùng Nổ</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/mot-phan-trong-ta-thumb.jpg"
+                          alt="A Part of You"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span class="feature-title">A Part of You</span>
+                        <h3 class="feature-description">Một phần trong ta</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/joker-dien-co-doi-thumb.jpg"
+                          alt="Joker: Folie à Deux"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title">Joker: Folie à Deux</span>
+                        <h3 class="feature-description">Joker: Điên Có Đôi</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/kampon-dua-tre-bi-an-thumb.jpg"
+                          alt="Kampon"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title">Kampon</span>
+                        <h3 class="feature-description">
+                          Kampon: Đứa Trẻ Bí Ẩn
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/gia-dinh-hai-nguoi-thumb.jpg"
+                          alt="Family of Two (A Mother and Son's Story) (2023)"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title"
+                          >Family of Two (A Mother and Son's Story) (2023)</span
+                        >
+                        <h3 class="feature-description">Gia Đình Hai Người</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/chao-mung-ve-nha-roscoe-jenkins-thumb.jpg"
+                          alt="Welcome Home Roscoe Jenkins"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title"
+                          >Welcome Home Roscoe Jenkins</span
+                        >
+                        <h3 class="feature-description">
+                          Chào Mừng Về Nhà, Roscoe Jenkins
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/danh-cap-thumb.jpg"
+                          alt="Stolen"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title">Stolen</span>
+                        <h3 class="feature-description">Đánh Cắp</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://cdn.cudem.org/sen-buyumeye-bak-thumb.jpg"
+                          alt="In Good Hands 2"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title">In Good Hands 2</span>
+                        <h3 class="feature-description">Sen Büyümeye Bak</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="movie-item">
+                      <div class="display-flex feature-image">
+                        <img
+                          src="https://phimvsub.cc/wp-content/themes/pchill/img/noimage.jpg"
+                          alt="The Djinn's Curse"
+                        />
+                      </div>
+
+                      <div
+                        class="display-flex flex-direction-column feature-info"
+                      >
+                        <span clas="feature-title">The Djinn's Curse</span>
+                        <h3 class="feature-description">
+                          Khong-Khaek: Lời Nguyền
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more2-feature">
+        <div class="container">
+          <div
+            class="feature-grid display-flex flex-wrap justify-content-between"
+          >
+            <div
+              class="feature-wrapper feature--small display-flex flex-direction-column"
+            >
+              <div class="movie-list display-flex justify-content-between">
+                <h2 class="movie-title">Phim Bộ Mới</h2>
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/du-toi-khong-phai-nguoi-hung-thumb.jpg"
+                      alt="The Atypical Family"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">The Atypical Family</span>
+                    <h3 class="feature-description">
+                      Dù Tôi Không Phải Người Hùng
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/khanh-du-nien-phan-2-thumb.jpg"
+                      alt="Joy of Life (Season 2)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Joy of Life (Season 2)</span>
+                    <h3 class="feature-description">Khánh Dư Thiên (Phần 2)</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/ho-yeu-tieu-hong-nuong-nguyet-hong-thien-thumb.jpg"
+                      alt="Fox Spirit Matchmaker 1"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Fox Spirit Matchmaker 1</span>
+                    <h3 class="feature-description">
+                      Hồ Yêu Tiểu Hồng Nương Nguyệt Hồng Thiên
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/nam-thanh-yen-thumb.jpg"
+                      alt="南城宴 (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">南城宴 (2024)</span>
+                    <h3 class="feature-description">Nam Thành Yến</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/dem-lang-man-o-hagwon-thumb.jpg"
+                      alt="The Midnight Romance in Hagwon (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title"
+                      >The Midnight Romance in Hagwon (2024)</span
+                    >
+                    <h3 class="feature-description">ĐÊM LÃNG MẠN Ở HAGWON</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/so-tay-huong-dan-yeu-duong-tiet-kiem-thumb.jpg"
+                      alt="Love On a Shoestring (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >Love On a Shoestring (2024)</span
+                    >
+                    <h3 class="feature-description">
+                      SỔ TAY HƯỚNG DẪN YÊU ĐƯƠNG TIẾT KIỆM
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/mi-nu-va-quy-ngai-lang-man-thumb.jpg"
+                      alt="Beauty and Mr. Romantic (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >Beauty and Mr. Romantic (2024)</span
+                    >
+                    <h3 class="feature-description">
+                      MĨ NỮ VÀ QUÝ NGÀI LÃNG MẠN
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://phimvsub.cc/wp-content/themes/pchill/img/noimage.jpg"
+                      alt="Liars in Love"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title">Liars in Love</span>
+                    <h3 class="feature-description">
+                      Lời Nói Dối Không Thể Cưỡng Lại
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/luat-phap-va-trat-tu-nan-nhan-dac-biet-phan-6-thumb.jpg"
+                      alt="Law & Order: Special Victims Unit (Season 6) (2004)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >Law & Order: Special Victims Unit (Season 6) (2004)</span
+                    >
+                    <h3 class="feature-description">
+                      LUẬT PHÁP VÀ TRẬT TỰ: NẠN NHÂN ĐẶC BIỆT (PHẦN 6)
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/luat-phap-va-trat-tu-nan-nhan-dac-biet-phan-7-thumb.jpg"
+                      alt="Law & Order: Special Victims Unit (Season 7) (2005)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >Law & Order: Special Victims Unit (Season 7) (2005)</span
+                    >
+                    <h3 class="feature-description">
+                      LUẬT PHÁP VÀ TRẬT TỰ: NẠN NHÂN ĐẶC BIỆT (PHẦN 7)
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/luat-phap-va-trat-tu-nan-nhan-dac-biet-phan-9-thumb.jpg"
+                      alt="Law & Order: Special Victims Unit (Season 9) (2007)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >Law & Order: Special Victims Unit (Season 9) (2007)</span
+                    >
+                    <h3 class="feature-description">
+                      LUẬT PHÁP VÀ TRẬT TỰ: NẠN NHÂN ĐẶC BIỆT (PHẦN 9)
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more3-feature">
+        <div class="container">
+          <div
+            class="feature-grid display-flex flex-wrap justify-content-between"
+          >
+            <div
+              class="feature-wrapper feature--small display-flex flex-direction-column"
+            >
+              <div class="movie-list display-flex justify-content-between">
+                <h2 class="movie-title">Anime Mới</h2>
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/dai-chua-te-2023-thumb.jpg"
+                      alt="The Great"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">The Great</span>
+                    <h3 class="feature-description">Đại Chúa Tể</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/tru-tien-2021-thumb.jpg"
+                      alt="Jade Dynasty"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Jade Dynasty</span>
+                    <h3 class="feature-description">Tru Tiên</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/dau-la-dai-luc-2-tuyet-the-duong-mon-thumb.jpg"
+                      alt="Soul Land 2: The Peerless Tang Clan (2023)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title"
+                      >Soul Land 2: The Peerless Tang Clan (2023)</span
+                    >
+                    <h3 class="feature-description">
+                      ĐẤU LA ĐẠI LỤC 2: TUYỆT THẾ ĐƯỜNG MÔN
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/than-an-vuong-toa-thumb.jpg"
+                      alt="Throne of Seal"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title">Throne of Seal</span>
+                    <h3 class="feature-description">Thần Ấn Vương Tọa</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/one-piece-thumb.jpg"
+                      alt="Vua hải tặc luffy, Đảo Hải Tặc (1999)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span class="feature-title"
+                      >Vua hải tặc luffy, Đảo Hải Tặc (1999)</span
+                    >
+                    <h3 class="feature-description">One Piece</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/mom-im-sorry-thumb.jpg"
+                      alt="邂逅她的少女时代 (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title">邂逅她的少女时代 (2024)</span>
+                    <h3 class="feature-description">Mom, I'm Sorry</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/hoc-vien-sieu-anh-hung-phan-7-thumb.jpg"
+                      alt="My Hero Academia (Season 7) (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >My Hero Academia (Season 7) (2024)</span
+                    >
+                    <h3 class="feature-description">
+                      HỌC VIỆN SIÊU ANH HÙNG (PHẦN 7)
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/dragon-raja-binh-minh-ruc-lua-thumb.jpg"
+                      alt="Dragon Raja -The Blazing Dawn- (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >Dragon Raja -The Blazing Dawn- (2024)</span
+                    >
+                    <h3 class="feature-description">
+                      DRAGON RAJA – BÌNH MINH RỰC LỬA
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/the-new-gate-thumb.jpg"
+                      alt="THE NEW GATE"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title">THE NEW GATE</span>
+                    <h3 class="feature-description">THE NEW GATE</h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/luc-do-toi-da-chuyen-sinh-thanh-slime-phan-3-thumb.jpg"
+                      alt="That Time I Got Reincarnated as a Slime Season 3 (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title"
+                      >That Time I Got Reincarnated as a Slime Season 3
+                      (2024)</span
+                    >
+                    <h3 class="feature-description">
+                      LÚC ĐÓ TÔI ĐÃ CHUYỂN SINH THÀNH SLIME (PHẦN 3)
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="movie-item">
+                  <div class="display-flex feature-image">
+                    <img
+                      src="https://cdn.cudem.org/ooi-tonbo-thumb.jpg"
+                      alt="オーイ! とんぼ (2024)"
+                    />
+                  </div>
+
+                  <div class="display-flex flex-direction-column feature-info">
+                    <span clas="feature-title">オーイ! とんぼ (2024)</span>
+                    <h3 class="feature-description">OOI! TONBO</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__copyright">
+        <div class="container">
+          <p>
+            Tất cả nội dung của trang web này được thu thập từ các trang web
+            video chính thống trên Internet, và không cung cấp phát trực tuyến
+            chính hãng. Nếu quyền lợi của bạn bị vi phạm, vui lòng thông báo cho
+            chúng tôi, chúng tôi sẽ xóa nội dung vi phạm kịp thời, cảm ơn sự hợp
+            tác của bạn!
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
