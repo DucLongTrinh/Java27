@@ -1,0 +1,62 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgb(26, 26, 26);
+  line-height: 1.2;
+}
+
+.heading {
+  color: #9ca3af;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card__thumbnail {
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.card__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__title.title--en {
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.card__title.title--vi {
+  color: #fdb813;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.card__label.vietsub {
+  color: green;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-image: -webkit-linear-gradient(
+    26deg,
+    rgb(243, 139, 68),
+    rgb(251, 197, 12)
+  );
+  border-radius: 0px 4px 4px 0px;
+  box-shadow: #0000004d 0px 3px 10px 0px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 25px;
+  padding: 0px 8px;
+  text-transform: uppercases;
+  border-bottom: 3px solid #f38b44;
+  font-weight: 500;
+}
