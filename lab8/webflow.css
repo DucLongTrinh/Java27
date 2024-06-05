@@ -168,16 +168,17 @@ a {
   margin-bottom: 140px;
 }
 
-.outstanding-feature.feature-image img {
+.outstanding-feature .feature-image img {
   width: 419px;
   border-radius: 15px;
 }
 
-.outstanding-feature.feature-title {
+.outstanding-feature .feature-title {
   font-size: 80px;
+  font-weight: 500;
 }
 
-.outstanding-feature.feature-description {
+.outstanding-feature .feature-description {
   font-size: 25px;
 }
 
@@ -209,13 +210,13 @@ a {
   margin-bottom: 120px;
 }
 
-.outstanding-feature.reversed.feature-title {
+.outstanding-feature.reversed .feature-title {
   font-size: 44px;
   width: 613px;
   margin: 20px 0px 15px;
 }
 
-.outstanding-feature.reversed.feature-description {
+.outstanding-feature.reversed .feature-description {
   font-size: 20px;
   width: 613px;
   font-weight: 300;
@@ -232,18 +233,18 @@ a {
   #1a1b1f
 }
 
-.outstanding-feature1.feature-title {
+.outstanding-feature1 .feature-title {
   font-size: 44px;
   margin-bottom: 15px;
 }
 
-.outstanding-feature1.feature-description {
+.outstanding-feature1 .feature-description {
   font-size: 20px;
   margin-bottom: 15px;
-  margin-bottom: 121px;
+
 }
 
-.outstanding-feature1.feature-image img {
+.outstanding-feature1 .feature-image img {
   width: 150px;
   border-radius: 200px;
   color: #1a1b1f;
@@ -265,16 +266,15 @@ a {
 
 .service-name-text {
   display: inline-block;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin: 0px 10px 10px 0px;
   font-size: 16px;
+  padding: 0px 10px;
   line-height: 2.4375;
   border-radius: 8px;
   background-color: #eeeff1;
   background-size: auto;
-  background-repeat: repeat;
-  opacity: 1;
   color: #000;
+  border-color: #ced1df;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
