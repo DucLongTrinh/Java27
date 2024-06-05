@@ -174,16 +174,15 @@ a {
 }
 
 .outstanding-feature .feature-title {
+  width: 346px;
   font-size: 80px;
   font-weight: 500;
 }
 
 .outstanding-feature .feature-description {
+  width: 671px;
   font-size: 25px;
 }
-
-
-
 
 .feature-title {
   font-size: 80px;
@@ -203,7 +202,6 @@ a {
 .feature-grid {
   row-gap: 10px;
   grid-area: 1 / 1 / 2 / 3;
-  
 }
 
 .outstanding-feature.reversed {
@@ -212,13 +210,14 @@ a {
 
 .outstanding-feature.reversed .feature-title {
   font-size: 44px;
-  width: 613px;
+  width: 600px;
+  font-weight: 500;
   margin: 20px 0px 15px;
 }
 
 .outstanding-feature.reversed .feature-description {
   font-size: 20px;
-  width: 613px;
+  width: 600px;
   font-weight: 300;
   margin: 0px 0px 50px;
   margin-right: 100px;
@@ -227,21 +226,25 @@ a {
 }
 
 .outstanding-feature.reversed.feature-skills {
-  display: grid;
+  border-style: solid;
   width: 428px;
   line-height: 1.6;
-  #1a1b1f
+  border-color: #ced1df;
+  background-color: #eeeff1;
 }
 
 .outstanding-feature1 .feature-title {
+  width: 1140px;
+  color: #1a1b1f;
   font-size: 44px;
   margin-bottom: 15px;
 }
 
 .outstanding-feature1 .feature-description {
+  width: 845px;
   font-size: 20px;
+  font-weight: 300;
   margin-bottom: 15px;
-
 }
 
 .outstanding-feature1 .feature-image img {
@@ -250,18 +253,20 @@ a {
   color: #1a1b1f;
 }
 
-
-
 .heading-4 {
   margin-bottom: 0;
   text-align: left;
   font-size: 20px;
-  width: 150px;
 }
 
 .text-block-3 {
   font-size: 16px;
   width: 150px;
+}
+
+.heading-4,
+.text-block-3 {
+  width: 255px;
 }
 
 .service-name-text {
@@ -286,7 +291,7 @@ a {
 }
 
 .paragraph-small {
-    color: #8f929e;
-    font-size: 14px;
-    line-height: 26px;
+  color: #8f929e;
+  font-size: 14px;
+  line-height: 26px;
 }
