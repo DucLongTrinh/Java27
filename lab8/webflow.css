@@ -9,15 +9,6 @@ body {
   line-height: 1.75;
 }
 
-.heading {
-  color: #1a1b1f;
-  font-weight: 500;
-  font-size: 44px;
-  margin: 20px 0px 15px;
-  padding: 30px 0px 0px;
-  margin-bottom: 15px;
-}
-
 .header {
   background-color: #ffffff;
   margin-bottom: 100px;
@@ -47,6 +38,9 @@ body {
 
 .logo img {
   aspect-ratio: auto 183 / 56;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .w-nav-brand {
@@ -63,16 +57,10 @@ a {
 }
 
 .header-image {
-  position: absolute;
   display: inline-block;
   width: 35px;
   height: 35px;
   border-radius: 0;
-  margin-top: 0;
-  margin-right: 10;
-  padding-top: 0;
-  background-position: 0 0;
-  background-size: contain;
   transition: 175ms;
 }
 
@@ -83,6 +71,8 @@ a {
   padding-left: 15px;
   color: #000;
   font-weight: 500;
+  line-height: 28px;
+  padding: 0px 0px 0px 15px;
 }
 
 .menu {
@@ -334,8 +324,9 @@ a {
   transform: none;
 }
 
-.navbar-flex {
+.footer-flex {
   margin: 20px 50px;
+  justify-content: space-between;
 }
 
 .navbar-footer {
@@ -348,7 +339,7 @@ a {
   text-align: center;
 }
 
-.footer-flex {
+.header-flex {
   width: 1140px;
   justify-content: space-between;
   line-height: 28px;
