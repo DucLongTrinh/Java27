@@ -16,9 +16,11 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="navbar display-flex align-items-center">
-          <a href="" class="logo-link w-nav-brand">
-            <div class="div-block-4">
+        <div
+          class="navbar display-flex align-items-center justify-content-between"
+        >
+          <a href="" class="logo w-nav-brand">
+            <div class="header-image">
               <img
                 src="https://uploads-ssl.webflow.com/5fa25266badbdb239c79ef86/60baff5fcc93ec0fda8a19ba_s%20logo%20copy%203.png"
                 alt=""
@@ -146,33 +148,35 @@
       <section class="outstanding-contact">
         <div class="container">
           <div
-            class="contact-form-wrap align-items-center justify-content-between"
+            class="contact-form-wrap display-flex align-items-center justify-content-between"
           >
             <h3 class="heading-2 email-link">Want to get in touch?</h3>
-            <form>
-              <div class="form-group">
-                <label for="inputName">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter your email"
-                />
-                <small id="emailHelp" class="form-text text-muted"></small>
-              </div>
+            <div class="submit-form">
+              <form>
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter your email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -180,33 +184,40 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="navbar display-flex align-items-center">
-          <a href="" class="footer-logo-link">
-            <div class="div-block-4">
-              <img
-                src="https://uploads-ssl.webflow.com/5fa25266badbdb239c79ef86/5ff799656e9f7150a1ceb0e6_s%20logo%20copy%205.png"
-                alt=""
-                class="footer-image"
-              />
-            </div>
-          </a>
+        <div class="navbar-footer">
+          <div class="footer-flex display-flex justify-content-between">
+            <a href="" class="footer-logo-link">
+              <div class="footer-image">
+                <img
+                  src="https://uploads-ssl.webflow.com/5fa25266badbdb239c79ef86/5ff799656e9f7150a1ceb0e6_s%20logo%20copy%205.png"
+                  alt=""
+                />
+              </div>
+            </a>
 
-          <nav class="navigation">
-            <ul class="menu display-flex">
-              <li class="menu-item">
-                <a href="" class="footer-link">Dribbble</a>
-              </li>
-              <li class="menu-item">
-                <a href="" class="footer-link">Linkedln</a>
-              </li>
-              <li class="menu-item">
-                <a href="" class="footer-link button">About</a>
-              </li>
-              <li class="menu-item">
-                <a href="" class="footer-link button">Contact</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="navigation">
+              <ul class="menu display-flex">
+                <li class="menu-item">
+                  <a href="" class="footer-link">Dribbble</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="footer-link">Linkedln</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="footer-link button">About</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="footer-link button">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="paragraph-small">
+            <p class="paragraph-small-description">
+              Copyright © 2020 Sebastian Petravic. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
