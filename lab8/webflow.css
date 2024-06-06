@@ -286,12 +286,33 @@ a {
 }
 
 .contact-form-wrap {
-  width: 1140px;
+  width: 1138px;
   color: #1a1b1f;
+  background-color: #eeeff1;
+  border-radius: 15px;
+  line-height: 28px;
+  margin: 1px;
 }
 
 .paragraph-small {
   color: #8f929e;
   font-size: 14px;
   line-height: 26px;
+}
+
+/* .form-text {
+} */
+
+.btn.btn-primary {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  background-color: #1a1b1f;
+  border-radius: 8px;
+  justify-content: center;
+  line-height: 1.333;
+  padding: 16px 25px 12px;
+  text-align: center;
 }
