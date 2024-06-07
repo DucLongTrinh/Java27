@@ -253,14 +253,16 @@ a {
 .service-name-text {
   display: inline-block;
   margin: 0px 10px 10px 0px;
+  border: 1px solid #ced1df;
   font-size: 16px;
   padding: 0px 10px;
+  margin-bottom: 10px;
   line-height: 2.4375;
   border-radius: 8px;
   background-color: #eeeff1;
   background-size: auto;
   color: #000;
-  border-color: #ced1df;
+  opacity: 1;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -292,7 +294,30 @@ a {
   text-align: left;
 }
 
+.w-layout-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  color: #8f929e;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .submit-form {
+  grid-column-gap: 30px;
+  grid-template-areas:
+    "."
+    "."
+    ".";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   background-color: #eeeff1;
   border-radius: 15px;
   color: #1a1b1f;
