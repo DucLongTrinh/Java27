@@ -1,4 +1,4 @@
-package mypackage;
+package btvn1;
 
 import java.text.DecimalFormat;
 

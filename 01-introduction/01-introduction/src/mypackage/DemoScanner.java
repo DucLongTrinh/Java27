@@ -1,6 +1,5 @@
 package mypackage;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class DemoScanner {
@@ -16,5 +15,13 @@ public class DemoScanner {
         Scanner docDuLieu = new Scanner(System.in);
         String line = docDuLieu.nextLine();
         System.out.println(line);
+    }
+
+    public static class BacNhatMotAn {
+        public static void main(String[] args) {
+            int a = 4;
+            int b = 2;
+            System.out.println(-b/(float)a);
+        }
     }
 }
