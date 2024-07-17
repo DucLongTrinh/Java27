@@ -1,10 +1,10 @@
 package democircle;
 
-import java.util.Random;
-
 public class Circle {
 
   private float radius;
+
+
 
   public Circle(float radius) {
     this.radius = radius;
@@ -15,7 +15,7 @@ public class Circle {
     return radius;
   }
 
-  public void setRadius() {
+  public void setRadius(float radius) {
     this.radius = radius;
   }
 

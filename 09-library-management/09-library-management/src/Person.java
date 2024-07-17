@@ -2,7 +2,9 @@ import java.security.SecureRandom;
 
 public class Person {
 
-  private String name;
+  protected String name;
+  protected String address;
+  protected String phone;
 
 
 }
