@@ -14,12 +14,12 @@ public class ItemLogicHanndel {
 
   public static void printItems() {
 
-//    for (int i = 0; i < items.length; i++) {
-//      if (items[i] == null) {
-//        continue;
-//      }
-//      System.out.println(items[i]);
-//    }
+    for (int i = 0; i < items.length; i++) {
+      if (items[i] == null) {
+        continue;
+      }
+      System.out.println(items[i]);
+    }
   }
 
   public static void inputNewItem() {
