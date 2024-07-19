@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/02-control-flow/02-control-flow.iml" filepath="$PROJECT_DIR$/02-control-flow/02-control-flow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-method/03-method.iml" filepath="$PROJECT_DIR$/03-method/03-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-array/04-array.iml" filepath="$PROJECT_DIR$/04-array/04-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-asignment-revision/05-asignment-revision.iml" filepath="$PROJECT_DIR$/05-asignment-revision/05-asignment-revision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-OOP-CONCEPT/07-OOP-CONCEPT.iml" filepath="$PROJECT_DIR$/07-OOP-CONCEPT/07-OOP-CONCEPT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-encapsulation/08-encapsulation.iml" filepath="$PROJECT_DIR$/08-encapsulation/08-encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-inheritance/08-inheritance.iml" filepath="$PROJECT_DIR$/08-inheritance/08-inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-library-management/09-library-management/09-library-management.iml" filepath="$PROJECT_DIR$/09-library-management/09-library-management/09-library-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-abstraction/10-abstraction.iml" filepath="$PROJECT_DIR$/10-abstraction/10-abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12-exceptions/12-exceptions.iml" filepath="$PROJECT_DIR$/12-exceptions/12-exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-library-management/Chuabaivn/Chuabaivn.iml" filepath="$PROJECT_DIR$/09-library-management/Chuabaivn/Chuabaivn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java27.iml" filepath="$PROJECT_DIR$/.idea/Java27.iml" />
+    </modules>
+  </component>
+</project>
