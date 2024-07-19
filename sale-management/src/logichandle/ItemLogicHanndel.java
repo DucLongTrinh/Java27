@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ItemLogicHanndel {
 
 
-  private final Item[] items = new Item[][1000];//
+  private final Item[] items = new Item[1000];
 
   public int getItemsLength() {
     return items.length;
@@ -14,12 +14,12 @@ public class ItemLogicHanndel {
 
   public static void printItems() {
 
-    for (int i = 0; i < items.length; i++) {
-      if (items[i] == null) {
-        continue;
-      }
-      System.out.println(items[i]);
-    }
+//    for (int i = 0; i < items.length; i++) {
+//      if (items[i] == null) {
+//        continue;
+//      }
+//      System.out.println(items[i]);
+//    }
   }
 
   public static void inputNewItem() {

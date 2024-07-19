@@ -25,7 +25,7 @@ public class SaleExecuteLogicHandle {
     int saleExecutesNumber = new Scanner(System.in).nextInt();
     for (int i = 0; i < saleExecutesNumber; i++) {
       System.out.println("Nhập thông tin cho nhân viên thứ " + (i + 1));
-      saleExecutes saleExecutes = new saleExecutes();
+      SaleExecute saleExecute = new saleExecutes();
       saleExecutes.inputInfo();
 
       // lưu nhân viên

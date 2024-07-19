@@ -16,24 +16,24 @@ public class MenuLogicHandle {
         case 2:
           ItemLogicHanndel.printItems();
           break;
-        case 3:
-          SaleExecuteLogicHandle.inputSaleExecute();
-          break;
-        case 4:
-          SaleExecuteLogicHandle.printSaleExecutes();
-          break;
-        case 5:
-          ItemSaleOrderLogicHandle.createItemSaleOrder();
-          break;
-        case 6:
-          ItemSaleOrderLogicHandle.printItemSaleOrder();
-          break;
-        case 7:
-          ItemSaleOrderLogicHandle.sort();
-          break;
-        case 8:
-          ItemSaleOrderLogicHandle.createItemSaleOrder();
-          break;
+//        case 3:
+//          SaleExecuteLogicHandle.inputSaleExecute();
+//          break;
+//        case 4:
+//          SaleExecuteLogicHandle.printSaleExecutes();
+//          break;
+//        case 5:
+//          ItemSaleOrderLogicHandle.createItemSaleOrder();
+//          break;
+//        case 6:
+//          ItemSaleOrderLogicHandle.printItemSaleOrder();
+//          break;
+//        case 7:
+//          ItemSaleOrderLogicHandle.sort();
+//          break;
+//        case 8:
+//          ItemSaleOrderLogicHandle.createItemSaleOrder();
+//          break;
         case 9:
           return;
       }
