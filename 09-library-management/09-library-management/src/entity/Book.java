@@ -1,4 +1,6 @@
-import java.time.LocalDate;
+package entity;
+
+import constant.BookSpecialist;
 import java.util.Scanner;
 
 public class Book {
@@ -54,7 +56,7 @@ public class Book {
 
   @Override
   public String toString() {
-    return "Book{" +
+    return "entity.Book{" +
         "id=" + id +
         ", name='" + name + '\'' +
         ", author='" + author + '\'' +

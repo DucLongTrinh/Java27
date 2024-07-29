@@ -11,10 +11,10 @@ public class MenuLogicHandle {
       int functionChoice = chooseFunction();
       switch (functionChoice) {
         case 1:
-          ItemLogicHanndel.inputNewItem();
+          ItemLogicHandle.inputNewItem();
           break;
         case 2:
-          ItemLogicHanndel.printItems();
+          ItemLogicHandle.printItems();
           break;
         case 3:
           SaleExecuteLogicHandle.inputSaleExecute();

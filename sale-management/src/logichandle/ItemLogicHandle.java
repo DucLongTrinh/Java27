@@ -3,7 +3,7 @@ package logichandle;
 import entity.Item;
 import java.util.Scanner;
 
-public class ItemLogicHanndel {
+public class ItemLogicHandle {
 
 
   private final Item[] items = new Item[1000];

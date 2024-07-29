@@ -1,3 +1,6 @@
+package entity;
+
+import constant.ReaderType;
 import java.util.Scanner;
 
 public class Reader extends Person { // đảm bảo tính kế thừa với extends được sử dụng
@@ -27,7 +30,7 @@ public class Reader extends Person { // đảm bảo tính kế thừa với ext
 
   @Override
   public String toString() {
-    return "Reader{" +
+    return "entity.Reader{" +
         "id=" + id +
         ", readerType=" + readerType.getValue() +
         ", name='" + name + '\'' +

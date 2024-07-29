@@ -1,3 +1,5 @@
+package constant;
+
 public enum ReaderType {
   STUDENT("Sinh Viên"),
   POST_STUDENT("Học viên cao học"),

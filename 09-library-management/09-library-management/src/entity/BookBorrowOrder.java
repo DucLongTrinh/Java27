@@ -1,13 +1,22 @@
+package entity;
+
 import java.util.Arrays;
 
 public class BookBorrowOrder {
 
   private Reader reader;  // bạn đọc mượn
   private BookBorrowOrderDetail[] details;   // Mảng detail sẽ lưu tất cả các detail (detail = book + quantity)
+  private int tongSoSach;
 
   public BookBorrowOrder(Reader reader, BookBorrowOrderDetail[] details) {
     this.reader = reader;
     this.details = details;
+  }
+
+  public BookBorrowOrder(Reader reader, BookBorrowOrderDetail[] details, int tongSoSach) {
+    this.reader = reader;
+    this.details = details;
+    this.tongSoSach = tongSoSach;
   }
 
   /**
@@ -39,9 +48,17 @@ public class BookBorrowOrder {
     this.details = details;
   }
 
+  public int getTotalQuantity() {
+    int total = 0;
+    for (BookBorrowOrderDetail detail : details) {
+      total += detail.getQuantity();
+    }
+    return total;
+  }
+
   @Override
   public String toString() {
-    return "BookBorrowOrder{" +
+    return "entity.BookBorrowOrder{" +
         "reader=" + reader +
         ", details=" + Arrays.toString(details) +
         '}';

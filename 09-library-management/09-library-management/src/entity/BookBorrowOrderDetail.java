@@ -1,3 +1,5 @@
+package entity;
+
 public class BookBorrowOrderDetail {  // 2 thuộc tính bên dưới hội đủ 1 lượt mượn sách
 
   private Book book;  // nhiều đầu sách (hay dòng sách)
@@ -26,7 +28,7 @@ public class BookBorrowOrderDetail {  // 2 thuộc tính bên dưới hội đ�
 
   @Override
   public String toString() {
-    return "BookBorrowOrderDetail{" +
+    return "entity.BookBorrowOrderDetail{" +
         "book=" + book +
         ", quantity=" + quantity +
         '}';

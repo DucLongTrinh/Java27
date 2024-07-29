@@ -1,4 +1,5 @@
-import java.security.SecureRandom;
+package entity;
+
 import java.util.Scanner;
 
 public class Person {
