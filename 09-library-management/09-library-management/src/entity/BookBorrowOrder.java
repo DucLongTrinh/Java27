@@ -48,6 +48,14 @@ public class BookBorrowOrder {
     this.details = details;
   }
 
+  public int getTongSoSach() {
+    return tongSoSach;
+  }
+
+  public void setTongSoSach(int tongSoSach) {
+    this.tongSoSach = tongSoSach;
+  }
+
   public int getTotalQuantity() {
     int total = 0;
     for (BookBorrowOrderDetail detail : details) {

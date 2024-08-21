@@ -76,10 +76,14 @@ public class BookBorrowOrderLogicHandle {
       Reader reader = truyVanBanDoc();
 
       BookBorrowOrderDetail[] details = khaiBaoThongTinSachMuon();
-
+      int total = 0;
+      for (BookBorrowOrderDetail detail : details) {
+        total += detail.getQuantity();
+      }
       // Tạo lượt mượn sách order
-      BookBorrowOrder order = new BookBorrowOrder(reader,
-          details); // lượt mượn sách hay phiếu mượn sách
+//      BookBorrowOrder order = new BookBorrowOrder(reader, details); // lượt mượn sách hay phiếu mượn sách
+      BookBorrowOrder order = new BookBorrowOrder(reader, details,
+          total); // lượt mượn sách hay phiếu mượn sách
       // lưu phiếu mượn sách vào danh sách các lượt mượn ở dòng 8 để lần sau xem lại
       saveOrder(order);
     }
@@ -100,13 +104,13 @@ public class BookBorrowOrderLogicHandle {
     int bookNumber = 0;
     while (true) {
       bookNumber = new Scanner(System.in).nextInt();
-      if (bookNumber > 0 && bookNumber <= bookLogicHandle.getBooksLength()) {
+      if (bookNumber > 0 && bookNumber <= bookLogicHandle.getBooksLength() && bookNumber <= 5) {
         break;
       }
-      System.out.println("Số sách muốn mượn không hợp lệ, vui lòng nhập lại: ");
+      System.out.println(
+          "Số sách muốn mượn không hợp lệ (là số dương và không vượt quá 5), vui lòng nhập lại: ");
     }
     BookBorrowOrderDetail[] details = new BookBorrowOrderDetail[bookNumber];  // số lượng dòng sách = số phần tử của mảng details
-    int tongSach = 0;
     int count = 0;
     for (int j = 0; j < bookNumber; j++) {
       System.out.println("Nhập id của đầu sách thứ " + (j + 1)
@@ -124,9 +128,18 @@ public class BookBorrowOrderLogicHandle {
       } // giúp xác định được thông tin bạn mượn đúng các đầu sách nào ? (trong thư viện)
 
       System.out.println("Đầu sách '" + book.getName() + "' này bạn muốn mượn bao nhiêu cuốn");
-      int quantity = new Scanner(System.in).nextInt();
-      tongSach += quantity;
-      BookBorrowOrderDetail detail = new BookBorrowOrderDetail(book, quantity);  // mỗi detail bao gồm thông tin mỗi đầu sách "book" + số lượng "quantity" mượn đối với đầu sách đó
+
+      // check quá 3 cuốn thì next
+      int quantity;
+      while (true) {
+        quantity = new Scanner(System.in).nextInt();
+        if (quantity > 0 && quantity < 4) {
+          break;
+        }
+        System.out.println("Số sách mượn phải là số dương và nhỏ hơn 4, vui lòng nhập lại: ");
+      }
+      BookBorrowOrderDetail detail = new BookBorrowOrderDetail(book,
+          quantity);  // mỗi detail bao gồm thông tin mỗi đầu sách "book" + số lượng "quantity" mượn đối với đầu sách đó
       details[count] = detail;   // count là biến con chạy giá trị thuộc [0; bookNumber -1]
       count++;
     }     // giúp define được details
@@ -201,7 +214,8 @@ public class BookBorrowOrderLogicHandle {
           continue;
         }
 
-        if (orders[i].getTotalQuantity() > orders[j].getTotalQuantity()) {
+//        if (orders[i].getTotalQuantity() > orders[j].getTotalQuantity()) {
+        if (orders[i].getTongSoSach() > orders[j].getTongSoSach()) {  // Thuật toán sắp xếp nổi bọt
           BookBorrowOrder temp = orders[j];
           orders[j] = orders[i];
           orders[i] = temp;
